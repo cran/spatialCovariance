@@ -1,0 +1,5 @@
+computeV                Compute Covariance Matrix
+f                       Density For Distance Between Two Points In
+                        Rectangles
+precompute              Precompute Step for Computing Covariance
+                        Matrix
