@@ -1,6 +1,6 @@
 Package: spatialCovariance
-Version: 0.2
-Date: 2004-06-11
+Version: 0.3
+Date: 2004-09-21
 Title: Computation of Spatial Covariance Matrices for Data on Rectangles Using One Dimensional Numerical Integration and Analytic Results
 Author: David Clifford <clifford@galton.uchicago.edu>
 Maintainer: David Clifford <clifford@galton.uchicago.edu>

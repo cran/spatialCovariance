@@ -3,9 +3,6 @@
 
 \title{Density For Distance Between Two Points In Rectangles}
 
-Density of the distance between two points distributed uniformly and
-independently in two congruent rectangles that lie on a lattice}
-
 \description{This evaluates the density for the distance between two
   points, each distribution uniformly and independently in rectangles.
   The rectangles are congruent and lie on a lattice.  Three special
