@@ -1,4 +1,4 @@
-f.anal.ldt <- function(coords)
+f.anal.ldt <- function(coords,info)
   {
     ## Copied over from ldt-analytic.r on Dec 10th
     ## trying to incorporate apply into my code

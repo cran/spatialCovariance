@@ -1,4 +1,4 @@
-f.anal.power <- function(coords, h)
+f.anal.power <- function(coords, h, info)
   {
     ## created Oct 10th
     ## K <- function(d,params) -d^(2*params[1])/params[1]

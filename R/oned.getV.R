@@ -1,26 +1,7 @@
 
 if(!exists("aniso")) aniso <- 1
 
-computeV <- function(info,class="ldt",params,eps=1e-8,cat.level=0)
-  {
-    getVTime <- proc.time()
-    
-    n <- info$nrows*info$ncols
-    area <- info$rowwidth*info$colwidth
-
-    ## density for distance between rectangles
-    ptm <- proc.time()
-    
-    if(class != "ldt" && class != "power" && class != "special")
-      {
-        KandCov <- defineK(class)
-        K <- KandCov$K  ## covariance function
-        cov.f <- KandCov$cov.f  ## product of covariance function and density
-      }
-
-    if(cat.level>=1) cat("loading in functions",(proc.time()-ptm)[3],"seconds\n")
-    
-    collapse.sum <- function(vect,positions)
+collapse.sum <- function(vect,positions)
       {
         res <- NULL
         pos <- 1
@@ -32,16 +13,35 @@ computeV <- function(info,class="ldt",params,eps=1e-8,cat.level=0)
         res
       }
 
+computeV <- function(info,class="ldt",params,eps=1e-8,cat.level=0)
+  {
+    getVTime <- proc.time()
+    
+    n <- info$nrows*info$ncols
+    area <- info$rowwidth*info$colwidth
+
+    ## density for distance between rectangles
+    ptm <- proc.time()
+    
+    if(class != "ldt" && class != "power")
+      {
+        KandCov <- defineK(class)
+        K <- KandCov$K  ## covariance function
+        cov.f <- KandCov$cov.f  ## product of covariance function and density
+      }
+
+    if(cat.level>=1) cat("loading in functions",(proc.time()-ptm)[3],"seconds\n")
+    
     ## this is what needs to be computed
     ptm <- proc.time()
     if(class=="ldt") {
-      results <- apply(info$indices,1,f.anal.ldt)
+      results <- apply(info$indices,1,f.anal.ldt,info=info)
       message <- "evaluating ldt analytic results"
     } else if(class=="power") {
-      results <- apply(info$indices,1,f.anal.power,h=params[1])
+      results <- apply(info$indices,1,f.anal.power,h=params[1],info=info)
       message <- "evaluating power analytic results"
     } else {
-      results <- apply(info$indices,1,f.NI,params=params,eps=eps,K=K,cov.f=cov.f)
+      results <- apply(info$indices,1,f.NI,params=params,eps=eps,K=K,cov.f=cov.f,info=info)
       message <- "evaluating numerical integrals"
     }
     

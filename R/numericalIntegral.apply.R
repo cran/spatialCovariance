@@ -1,4 +1,4 @@
-f.NI <- function(coords,params,eps,K,cov.f)
+f.NI <- function(coords,params,eps,K,cov.f,info)
   {
     a <- info$rowwidth
     b <- info$colwidth

@@ -33,7 +33,10 @@ V <- computeV(info,class="ldt",eps=1e-10,cat.level=1)  ## logarithmic model
     be used to
     compute the derivatives of the covariance matrices for specific
     models, for example "dbess0", "dexp", "dexp2", "dbess1",
-    "dpowerNI".}
+    "dpowerNI".  Can also be used for any isotropic function K, simply
+    define a function K in the workspace that has two arguments,
+    distance and a vector of parameters.  Then call
+  \code{computeV} with \code{class="special"}.}
   \item{params}{Parameters that go with a specific class of models, for
     the "matern" class it requires an inverse range parameter and a
     smoothness parameter, for example \code{params=c(1,0.5)}, this

@@ -3,7 +3,7 @@
 
 \title{Density For Distance Between Two Points In Rectangles}
 
-between two points distributed uniformly and
+Density of the distance between two points distributed uniformly and
 independently in two congruent rectangles that lie on a lattice}
 
 \description{This evaluates the density for the distance between two
@@ -35,8 +35,7 @@ f(d,rowwidth=1,colwidth=1,ax=1,bx=0,i=2,j=1)  ## two points in squares, squares 
   B. Ghosh "Random distances within a rectangle and between two
   rectangles", Bulletin of the Calcutta Mathematical Society, 1951, 43, 17-24
 
-  D. Clifford, "Computing Spatial Covariance Matrices", JCGS, under
-  review, 2004
+  D. Clifford, "Computing Spatial Covariance Matrices", JCGS, to appear
 }
 
 \author{David Clifford}

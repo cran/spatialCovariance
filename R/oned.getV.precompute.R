@@ -24,7 +24,7 @@ precompute <- function(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level=0)
       if(length(colsep)==1) colsep <- rep(colsep,ncols-1)
       nrow <- rep(seq(1:nrows), ncols) - 1
       ncol <- rep(seq(1:ncols), rep(nrows, ncols)) - 1
-    t1 <- proc.time()
+      t1 <- proc.time()
       num.ifail <- 0
 
       ## vector of x-coordinates:

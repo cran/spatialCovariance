@@ -25,10 +25,8 @@ precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level=0)
 }
 
 \usage{
-info <- precompute(nrows=4,ncols=4,rowwidth=1,colwidth=1,rowsep=0,colsep=1)
-precompute(info,cat.level=0,aniso=2)  ## stretch by a factor of two in
-the y direction, across rows.
- }
+info <- precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level)
+info <- precompute.update(info,aniso=2)  ## geometric anisotropy update}
 
 \arguments{
   \item{nrows,ncols}{Number of rows and columns in the lattice}
