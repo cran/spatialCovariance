@@ -17,13 +17,13 @@
   functions.}
 
 \synopsis{
-computeV(info,class="ldt",params,eps=1e-8,cat.level=0)
+computeV(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0)
 }
 
 \usage{
 V <- computeV(info,class="matern",params=c(0.2,0.5), \dots)  ## matern
 model with inverse range 0.2 and smoothness 0.5
-V <- computeV(info,class="ldt",eps=1e-10,cat.level=1)  ## logarithmic model
+V <- computeV(info,class="ldt",rel.tol=1e-10,abs.tol=rel.tol,cat.level=1)  ## logarithmic model
  }
 
 \arguments{
@@ -41,8 +41,9 @@ V <- computeV(info,class="ldt",eps=1e-10,cat.level=1)  ## logarithmic model
     the "matern" class it requires an inverse range parameter and a
     smoothness parameter, for example \code{params=c(1,0.5)}, this
     corresponds to the case when \code{class="exp", params=c(1)}.}
-  \item{eps}{Relative Tolerance for one dimensional numerical
+  \item{rel.tol}{Relative Tolerance for one dimensional numerical
     integration}
+  \item{abs.tol}{Absolute Tolerance for one dimensional numerical integration}
   \item{cat.level}{Controls level of time output, takes values 0, 0.5, 1}
 }
 

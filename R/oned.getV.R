@@ -13,7 +13,7 @@ collapse.sum <- function(vect,positions)
         res
       }
 
-computeV <- function(info,class="ldt",params,eps=1e-8,cat.level=0)
+computeV <- function(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0)
   {
     getVTime <- proc.time()
     
@@ -41,7 +41,7 @@ computeV <- function(info,class="ldt",params,eps=1e-8,cat.level=0)
       results <- apply(info$indices,1,f.anal.power,h=params[1],info=info)
       message <- "evaluating power analytic results"
     } else {
-      results <- apply(info$indices,1,f.NI,params=params,eps=eps,K=K,cov.f=cov.f,info=info)
+      results <- apply(info$indices,1,f.NI,params=params,rel.tol=rel.tol,abs.tol=abs.tol,K=K,cov.f=cov.f,info=info)
       message <- "evaluating numerical integrals"
     }
     
@@ -90,7 +90,7 @@ if(FALSE) {
   
   if(exists("getV.precompute")) rm(getV.precompute)
   
-  getVresult <- getV(info,class,eps,unitarea,cat.level,params)
+  getVresult <- getV(info,class,rel.tol,abs.tol,unitarea,cat.level,params)
   V <- getVresult$V
   area <- getVresult$area
   rm(getV,getVresult)

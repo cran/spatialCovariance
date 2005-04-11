@@ -32,7 +32,7 @@ f(d,rowwidth=1,colwidth=1,ax=1,bx=0,i=2,j=1)  ## two points in squares, squares 
   B. Ghosh "Random distances within a rectangle and between two
   rectangles", Bulletin of the Calcutta Mathematical Society, 1951, 43, 17-24
 
-  D. Clifford, "Computing Spatial Covariance Matrices", JCGS, to appear
+  D. Clifford, "Computation of Spatial Covariance Matrices", JCGS, March 2005, vol. 14, no. 1, pp. 155-167(13) 
 }
 
 \author{David Clifford}

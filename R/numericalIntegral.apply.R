@@ -1,4 +1,4 @@
-f.NI <- function(coords,params,eps,K,cov.f,info)
+f.NI <- function(coords,params,rel.tol,abs.tol,K,cov.f,info)
   {
     a <- info$rowwidth
     b <- info$colwidth
@@ -15,12 +15,12 @@ f.NI <- function(coords,params,eps,K,cov.f,info)
     maxD <- coords[11]
 
     if(minD < maxD) {
-      int.res <- try(integrate(cov.f,lower=minD, upper=maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,rel.tol=eps,params=params,K=K,stop.on.error=F))
+      int.res <- try(integrate(cov.f,lower=minD, upper=maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,rel.tol=rel.tol,abs.tol=abs.tol,params=params,K=K,stop.on.error=F))
     } else { int.res <- list(value=0) }
     
     if(class(int.res)=="try-error") {
 
-      cat("integration fail for plot",i,j,"with limits of integration",minD,maxD,"corresponding to",integrate(f,lower=minD, upper=maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,rel.tol=eps)$value,"of the density and over this region the covariance function values are between",cov.f(minD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,params=params,K=K),"and",cov.f(maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,params=params,K=K),"\n")
+      cat("integration fail for plot",i,j,"with limits of integration",minD,maxD,"corresponding to",integrate(f,lower=minD, upper=maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,rel.tol=rel.tol,abs.tol=abs.tol)$value,"of the density and over this region the covariance function values are between",cov.f(minD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,params=params,K=K),"and",cov.f(maxD,rw=a,cw=b,ax=ax,bx=bx,i=i,j=j,params=params,K=K),"\n")
 
       if(FALSE) {
         par(mfrow=c(3,2))
