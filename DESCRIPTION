@@ -1,6 +1,6 @@
 Package: spatialCovariance
-Version: 0.4
-Date: 2005-04-11
+Version: 0.5
+Date: 2005-05-09
 Title: Computation of spatial covariance matrices for data on rectangles
 Author: David Clifford <clifford@galton.uchicago.edu>
 Maintainer: David Clifford <clifford@galton.uchicago.edu>
@@ -8,4 +8,4 @@ Description: Functions that compute the spatial covariance matrix for the matern
 License: GPL
 URL: http://galton.uchicago.edu/~clifford/
 SystemRequirements: 
-Packaged: Sun Apr 10 19:30:02 2005; clifford
+Packaged: Sun May  8 20:46:45 2005; clifford

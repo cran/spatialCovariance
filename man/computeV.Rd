@@ -21,8 +21,7 @@ computeV(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = re
 }
 
 \usage{
-V <- computeV(info,class="matern",params=c(0.2,0.5), \dots)  ## matern
-model with inverse range 0.2 and smoothness 0.5
+V <- computeV(info,class="matern",params=c(0.2,0.5), \dots)  ## matern model with inverse range 0.2 and smoothness 0.5
 V <- computeV(info,class="ldt",rel.tol=1e-10,abs.tol=rel.tol,cat.level=1)  ## logarithmic model
  }
 
