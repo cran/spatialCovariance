@@ -1,11 +1,11 @@
 Package: spatialCovariance
-Version: 0.5
-Date: 2005-05-09
+Version: 0.6-4
+Date: 2009-2-13
 Title: Computation of spatial covariance matrices for data on rectangles
-Author: David Clifford <clifford@galton.uchicago.edu>
-Maintainer: David Clifford <clifford@galton.uchicago.edu>
+Author: David Clifford <clifford@csiro.au>
+Maintainer: David Clifford <clifford@csiro.au>
 Description: Functions that compute the spatial covariance matrix for the matern and power classes of spatial models, for data that arise on rectangular units.  This code can also be used for the change of support problem and for spatial data that arise on irregularly shaped regions like counties or zipcodes by laying a fine grid of rectangles and aggregating the integrals in a form of Riemann integration.
 License: GPL
-URL: http://galton.uchicago.edu/~clifford/
+URL: http://www.csiro.au/people/David.Clifford.html
 SystemRequirements: 
-Packaged: Sun May  8 20:46:45 2005; clifford
+Packaged: Fri Feb 13 10:14:22 2009; cli065

@@ -13,7 +13,7 @@ collapse.sum <- function(vect,positions)
         res
       }
 
-computeV <- function(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0)
+computeV <- function(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0, K=NULL)
   {
     getVTime <- proc.time()
     
@@ -25,8 +25,8 @@ computeV <- function(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,
     
     if(class != "ldt" && class != "power")
       {
-        KandCov <- defineK(class)
-        K <- KandCov$K  ## covariance function
+        KandCov <- defineK(class,K)
+        if(class != "misc") K <- KandCov$K  ## covariance function
         cov.f <- KandCov$cov.f  ## product of covariance function and density
       }
 

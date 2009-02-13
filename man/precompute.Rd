@@ -5,8 +5,8 @@
 \title{Precompute Step for Computing Covariance Matrix}
 
 \description{For a lattice with \code{nr} rows and \code{nc} columns on
-  only needs to compute $n=nr\times nc$ entries to fill the whole
-  covariance matrix (of size $n \times n$).  For example, the
+  only needs to compute $n=nr X nc$ entries to fill the whole
+  covariance matrix (of size $n X n$).  For example, the
   diagonal entries will all be the same so one only needs to compute it
   once and know that the value needs to be placed along the diagonal.
   This algorithm figures out which entries need to be computed, and how
@@ -14,9 +14,9 @@
 
   When an anisotropy term \code{aniso} is
   included in the direction of rows and columns it changes how distance
-  is measure from $\sqrt{x^2+y^2}$ to
-  $\sqrt{x^2+\alpha^2 y^2}$.  This amounts to stretching the
-  lattice in the appropriate direction by a factor of $\alpha$.  We
+  is measure from $sqrt (x^2+y^2)$ to
+  $sqrt (x^2+ alpha^2 y^2)$.  This amounts to stretching the
+  lattice in the appropriate direction by a factor of $alpha$.  We
   can update the results of the \code{precompute} stage very easily.
 }
 
