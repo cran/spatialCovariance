@@ -20,13 +20,9 @@
   can update the results of the \code{precompute} stage very easily.
 }
 
-\synopsis{
-precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level=0)
-}
-
 \usage{
-precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level)
-precompute.update(info,aniso=2)  ## geometric anisotropy update}
+precompute(nrows, ncols, rowwidth, colwidth, rowsep, colsep, cat.level = 0) 
+}
 
 \arguments{
   \item{nrows,ncols}{Number of rows and columns in the lattice}
@@ -35,9 +31,6 @@ precompute.update(info,aniso=2)  ## geometric anisotropy update}
   Pass scalars if the separations are constant in each direction.}
   \item{cat.level}{0,0.5,1, changes the amount of output.  Output is
     limited to times for various stages of the computation}
-  \item{aniso}{Value of anisotropy parameter in the direction of rows
-    and columns.  Should be a positive number.}
-  \item{info}{Result of the precompute stage}
 }
 
 \author{David Clifford}

@@ -1,4 +1,4 @@
-28cb31dc049b4fa061d6710bc61ce699 *DESCRIPTION
+a29fd7230746824e923ae627bbab9f63 *DESCRIPTION
 ddb082919d02c0e897362537ddd5be3b *NAMESPACE
 0fb05fd8f15442de4eaf04f0581b38ac *R/11case.R
 493b4dd00eb77138ba410fc35f3dee40 *R/covarianceFunctions.R
@@ -10,7 +10,7 @@ d53b88b455ff41c410ad8ba3f9b1544d *R/oned.getV.R
 99c7ae18924632c50c0b650cc8a3693c *R/oned.getV.precompute.R
 3ced2213eff30f29cca1d88f35af1ff4 *R/oned.getV.update.R
 c62af870a3f882c02d823cbe9da7b1e5 *R/power-analytic.apply.R
-c2f58b1b89474f9e7da6b0263b1a94a0 *man/computeV.Rd
-f396afd70be3882521b40bef806b17c0 *man/f.Rd
-4beca0678be7426d653831d47c166a57 *man/precompute.Rd
+56a81e49ffa15eea57d0ebd6ce80fa9d *man/computeV.Rd
+453305bdbca165b32490bca1b492bccf *man/f.Rd
+e730122f114eaa1c5dfe98ffcd4423b3 *man/precompute.Rd
 53c86ae0b1c279026db1e592916dc4a0 *tests/spatialCovTests.R

@@ -16,15 +16,11 @@
   Bessel$_0$, Exponential, Bessel$_1$, spline and logarithmic covariance
   functions.}
 
-\synopsis{
-computeV(info,class="ldt",params,rel.tol =.Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0,K=NULL)
+\usage{
+computeV(info, class="ldt", params, rel.tol =.Machine$double.eps^0.25,
+         abs.tol = rel.tol, cat.level=0 ,K=NULL)
 }
 
-\usage{
-computeV(info,class="matern",params=c(0.2,0.5))  ## matern model with inverse range 0.2 and smoothness 0.5
-computeV(info,class="ldt",rel.tol=1e-10,abs.tol=rel.tol,cat.level=1)  ## logarithmic model
-computeV(info,class="misc",K=K) ## Pass another function K
- }
 
 \arguments{
   \item{info}{Result of the precompute stage}

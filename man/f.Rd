@@ -11,13 +11,9 @@
   (or column) of the lattice and when the
   two rectangles lie on different rows and columns.}
 
-\synopsis{
-  f(d,rowwidth,colwidth,ax,bx,i,j)
-}
 
 \usage{
-f(d,rowwidth=1,colwidth=1,ax=0,bx=0,i=1,j=1)  ## two points in a unit square
-f(d,rowwidth=1,colwidth=1,ax=1,bx=0,i=2,j=1)  ## two points in squares, squares are side by side
+f(d, rowwidth, colwidth, ax, bx, i, j) 
 }
 
 \arguments{
