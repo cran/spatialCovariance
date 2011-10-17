@@ -25,8 +25,8 @@ precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level=0)
 }
 
 \usage{
-info <- precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level)
-info <- precompute.update(info,aniso=2)  ## geometric anisotropy update}
+precompute(nrows,ncols,rowwidth,colwidth,rowsep,colsep,cat.level)
+precompute.update(info,aniso=2)  ## geometric anisotropy update}
 
 \arguments{
   \item{nrows,ncols}{Number of rows and columns in the lattice}
@@ -41,6 +41,10 @@ info <- precompute.update(info,aniso=2)  ## geometric anisotropy update}
 }
 
 \author{David Clifford}
+
+\examples{
+## See computeV help page for more details and examples
+}
 
 \keyword{spatial}
 

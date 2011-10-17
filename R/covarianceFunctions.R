@@ -11,7 +11,7 @@ defineK <- function(class,K)
     if(class=="exp") K <- function(d,params) exp(-params[1]*d)
     ##if(class=="exp") K <- function(d,params) sqrt(params[1]*d)*besselK(params[1]*d,0.5)
     if(class=="bess0") K <- function(d,params) besselK(params[1]*d,0)
-
+    
     if(class=="powerNI") K <- function(d,params) d^(-params[1])/params[1]
     ## params < 2 above
     if(class=="powerNI") K <- function(d,params) -d^(2*params[1])/params[1]
