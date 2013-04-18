@@ -17,10 +17,8 @@
   functions.}
 
 \usage{
-computeV(info, class="ldt", params, rel.tol =.Machine$double.eps^0.25,
-         abs.tol = rel.tol, cat.level=0 ,K=NULL)
-}
-
+computeV(info,class="ldt",params,rel.tol = .Machine$double.eps^0.25,abs.tol = rel.tol,cat.level=0, K=NULL)
+ }
 
 \arguments{
   \item{info}{Result of the precompute stage}

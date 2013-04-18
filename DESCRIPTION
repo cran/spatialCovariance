@@ -1,10 +1,10 @@
 Package: spatialCovariance
-Version: 0.6-6.1
-Date: 2011-10-17
+Version: 0.6-7
+Date: 2013-4-18
 Title: Computation of spatial covariance matrices for data on
         rectangles
 Author: David Clifford <clifford@csiro.au>
-Maintainer: ORPHANED
+Maintainer: David Clifford <clifford@csiro.au>
 Description: Functions that compute the spatial covariance matrix for
         the matern and power classes of spatial models, for data that
         arise on rectangular units.  This code can also be used for the
@@ -15,10 +15,7 @@ Description: Functions that compute the spatial covariance matrix for
 License: GPL
 URL: http://www.csiro.au/people/David.Clifford.html
 SystemRequirements:
-Packaged: 2013-04-14 06:22:23 UTC; ripley
-Repository: CRAN
-Date/Publication: 2013-04-14 08:24:58
+Packaged: 2013-04-18 03:54:54 UTC; cli065
 NeedsCompilation: no
-X-CRAN-Original-Maintainer: David Clifford <clifford@csiro.au>
-X-CRAN-Comment: Orphaned on 2012-04-14 as the maintainer is
-        untraceable.
+Repository: CRAN
+Date/Publication: 2013-04-18 07:33:00
