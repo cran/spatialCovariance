@@ -1,5 +1,6 @@
-6c337dd0848f82e0acab71e70eee82c5 *DESCRIPTION
-ddb082919d02c0e897362537ddd5be3b *NAMESPACE
+64548d35f734cc5a0082e050cb9d8527 *DESCRIPTION
+7babfd40b956a08802c0f805302a9b9f *INDEX
+429e3585c3fb414417ceffb5022c83ef *NAMESPACE
 0fb05fd8f15442de4eaf04f0581b38ac *R/11case.R
 493b4dd00eb77138ba410fc35f3dee40 *R/covarianceFunctions.R
 75dd6fb216410ad62cb14b5e1e8ab89f *R/hypergeometrics.R
@@ -10,7 +11,7 @@ d53b88b455ff41c410ad8ba3f9b1544d *R/oned.getV.R
 99c7ae18924632c50c0b650cc8a3693c *R/oned.getV.precompute.R
 3ced2213eff30f29cca1d88f35af1ff4 *R/oned.getV.update.R
 c62af870a3f882c02d823cbe9da7b1e5 *R/power-analytic.apply.R
-3093390513805fbb30e9df9f00323ab1 *man/computeV.Rd
+596013a4232c0bc52670f283e60e3a64 *man/computeV.Rd
 cc61d27ab51e9fbbc55ffb52a523758a *man/f.Rd
 3b6d626f533adbc9526eb9a28c6d7066 *man/precompute.Rd
-53c86ae0b1c279026db1e592916dc4a0 *tests/spatialCovTests.R
+e63e8aa6b7cf04f8316d18437000d6ab *tests/spatialCovTests.R
